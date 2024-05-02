@@ -5,21 +5,23 @@ import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
 const Index = () => {
   return (
     <Container maxW="container.xl" p={0}>
-      <Flex align="center" justify="center" h="100vh" bgGradient="linear(to-r, teal.300, yellow.400)">
+      <Flex align="center" justify="center" h="100vh" bgGradient="linear(to-r, gray.300, gray.500)">
         <VStack spacing={2} textAlign="center">
           <Image borderRadius="full" boxSize="150px" src="https://images.unsplash.com/photo-1560250097-0b93528c311a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDcxMzJ8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBwb3J0cmFpdHxlbnwwfHx8fDE3MTQ2NjcxODd8MA&ixlib=rb-4.0.3&q=80&w=1080" alt="Profile Image" />
-          <Heading as="h1" size="2xl" fontWeight="bold">
+          <Heading as="h1" size="2xl" fontWeight="normal" color="gray.700">
             John Doe
           </Heading>
-          <Text fontSize="xl">Software Developer | Tech Enthusiast</Text>
+          <Text fontSize="lg" color="gray.600">
+            Software Developer | Tech Enthusiast
+          </Text>
           <Stack direction="row" spacing={4} align="center" justify="center" mt={5}>
-            <Button leftIcon={<FaLinkedin />} colorScheme="blue">
+            <Button leftIcon={<FaLinkedin />} colorScheme="teal" variant="outline">
               LinkedIn
             </Button>
-            <Button leftIcon={<FaGithub />} colorScheme="gray">
+            <Button leftIcon={<FaGithub />} colorScheme="teal" variant="outline">
               GitHub
             </Button>
-            <Button leftIcon={<FaEnvelope />} colorScheme="red">
+            <Button leftIcon={<FaEnvelope />} colorScheme="teal" variant="outline">
               Email
             </Button>
           </Stack>
